@@ -1,0 +1,264 @@
+/* variable */
+
+:root {
+    --primaryColor: #EC5863;
+    --secondaryColor: #4285F4;
+    --textColor_1: #222;
+    --textColor_2: #616161;
+
+    --Rubik: 'Rubik', sans-serif;
+    --Raleway: 'Raleway', sans-serif;
+}
+
+/* Global style */
+a {
+    text-decoration: none;
+    color: var(--textColor_1);
+}
+ul li a {
+    text-decoration: none;
+    color: var(--textColor_1);
+}
+h1 {
+    font-family: var(--Rubik);
+}
+p {
+    font-family: var(--Rubik);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-section {
+    background: #FAFBFD;
+    height: 100vh;
+    position: relative;
+}
+
+/* ================
+    Navigation section
+================= */
+
+.main-section nav {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+.main-section nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-section nav .container .logo img {
+    width: 140px;
+    height: 40px;
+}
+.main-section nav .container ul {
+    display: flex;
+}
+.main-section nav .container ul li {
+    list-style: none;
+    margin-left: 40px;
+}
+.main-section nav .container ul li a {
+    font-family: var(--Raleway);
+    font-size: 12px;
+    font-weight: bold;
+}
+.main-section nav .container a button {
+    border: none;
+    background: var(--secondaryColor);
+    font-family: var(--Raleway);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    width: 150px;
+    height: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* ================
+    Navigation section
+================= */
+
+
+/* ================
+    hero section
+================= */
+
+.main-section .container .hero-left h1 {
+    font-size: 54px;
+    font-weight: 800;
+    font-family: var(--Rubik);
+    color: var(--textColor_1);
+}
+.main-section .container .hero-left h1 span {
+    color: var(--secondaryColor);
+}
+.main-section .container .hero-left p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--Rubik);
+    color: var(--textColor_2);
+    margin: 20px 0;
+}
+.main-section .container .hero-left a button {
+    border: none;
+    background: var(--primaryColor);
+    font-family: var(--Raleway);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    width: 160px;
+    height: 45px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.main-section .container img {
+    width: 690px;
+    position: relative;
+    z-index: 2;
+}
+.main-section section .container {
+    height: 80vh;
+    margin-top: 10px;
+}
+.main-section section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-section .red-bg {
+    height: 100vh;
+    width: 30%;
+    background: var(--primaryColor);
+    position: absolute;
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -ms-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+}
+.main-section .container .hero-left .video {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.main-section .container .hero-left .video img {
+    width: 45px;
+    height: 45px;
+}
+.main-section .container .hero-left .video p {
+    counter-reset: var(--textColor_2);
+    margin-left: 10px;
+    font-size: 14px;
+}
+.main-section .container .hero-left .video p span {
+    color: var(--textColor_1);
+    font-weight: bold;
+}
+
+/* ================
+    hero section
+================= */
+
+
+/* ================
+    Features section
+================= */
+
+
+section .container {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+section .container img {
+    width: 500px;
+}
+.container .app-img {
+    width: 60%;
+}
+.container .right-part {
+    width: 50%;
+}
+.container .right-part a button {
+    border: none;
+    background: var(--primaryColor);
+    font-family: var(--Raleway);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.container .right-part h1 {
+    font-size: 54px;
+    font-weight: 800;
+    font-family: var(--Rubik);
+    color: var(--textColor_1);
+}
+.container .right-part h1 span {
+    color: var(--primaryColor);
+}
+.container .right-part p{
+    font-size: 17px;
+    font-family: var(--Rubik);
+    color: var(--textColor_2);
+    margin: 20px 0;
+}
+
+/* ================
+    Features section
+================= */
+
+.second-section {
+    background: #FAFBFD;
+    height: 100vh;
+    margin-top: 80px;
+}
+.second-section .service .container {
+    position: relative;
+    height: 335px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.second-section .service .container .background {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin-top: 80px;
+}
+.second-section .service .container .background img {
+    width: 100%;
+}
+.second-section .service .container .box {
+    width: 80%;
+    height: 150px;
+    background: rgb(255, 255, 255);
+    margin-top: 150px;
+    position: absolute;
+}
