@@ -1,0 +1,107 @@
+
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 55px;
+    color: var(--textColor_1);
+    font-family: var(--Rubik);
+    font-weight: 700;
+}
+p {
+    font-size: 16px;
+    font-family: var(--Rubik);
+    color: var(--textColor_2);
+    font-weight: 500;
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+.nav-btn {
+    padding: 12px 25px;
+    background-color: var(--secondaryColor);
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-family: var(--Raleway);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+.nav-btn:hover {
+  background: #3771ce;
+}
+.btn {
+    padding: 15px 25px;
+    background-color: var(--primaryColor);
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    font-family: var(--Raleway);
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+.btn:hover {
+  letter-spacing: 4px;
+}
+.blue {
+    color: var(--secondaryColor);
+}
+.tomato {
+    color: var(--primaryColor);
+}
+
+/* Global style */
+
+/* container class */
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}

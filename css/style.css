@@ -1,264 +1,259 @@
-/* variable */
-
 :root {
     --primaryColor: #EC5863;
     --secondaryColor: #4285F4;
     --textColor_1: #222;
-    --textColor_2: #616161;
+    --textColor_2: #777;
 
     --Rubik: 'Rubik', sans-serif;
     --Raleway: 'Raleway', sans-serif;
 }
-
-/* Global style */
-a {
-    text-decoration: none;
-    color: var(--textColor_1);
-}
-ul li a {
-    text-decoration: none;
-    color: var(--textColor_1);
-}
-h1 {
-    font-family: var(--Rubik);
-}
-p {
-    font-family: var(--Rubik);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.main-section {
-    background: #FAFBFD;
-    height: 100vh;
-    position: relative;
-}
-
-/* ================
-    Navigation section
-================= */
-
-.main-section nav {
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 3;
-}
-.main-section nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.main-section nav .container .logo img {
-    width: 140px;
-    height: 40px;
-}
-.main-section nav .container ul {
-    display: flex;
-}
-.main-section nav .container ul li {
-    list-style: none;
-    margin-left: 40px;
-}
-.main-section nav .container ul li a {
-    font-family: var(--Raleway);
-    font-size: 12px;
-    font-weight: bold;
-}
-.main-section nav .container a button {
-    border: none;
-    background: var(--secondaryColor);
-    font-family: var(--Raleway);
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    width: 150px;
-    height: 45px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-/* ================
-    Navigation section
-================= */
-
-
-/* ================
-    hero section
-================= */
-
-.main-section .container .hero-left h1 {
-    font-size: 54px;
-    font-weight: 800;
-    font-family: var(--Rubik);
-    color: var(--textColor_1);
-}
-.main-section .container .hero-left h1 span {
-    color: var(--secondaryColor);
-}
-.main-section .container .hero-left p {
-    font-size: 17px;
-    font-weight: 400;
-    font-family: var(--Rubik);
-    color: var(--textColor_2);
-    margin: 20px 0;
-}
-.main-section .container .hero-left a button {
-    border: none;
-    background: var(--primaryColor);
-    font-family: var(--Raleway);
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    width: 160px;
-    height: 45px;
-    margin-bottom: 20px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-.main-section .container img {
-    width: 690px;
+.main {
     position: relative;
     z-index: 2;
+    background: #FAFBFD;
+    width: 100%;
+    /* height: 100vh; */
 }
-.main-section section .container {
-    height: 80vh;
-    margin-top: 10px;
+.main::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 495px;
+    height: 100%;
+    border-radius: 30px 0 0 30px;
+    background: var(--primaryColor);
+    right: 0;
+    top: 0;
 }
-.main-section section .container {
+/* ================Nav Section Style=============== */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .container img {
+    width: 160px;
+}
+nav .container ul {
+    display: flex;
+}
+nav .container ul li {
+    list-style: none;
+    margin-left: 30px;
+}
+nav .container ul li a {
+    font-size: 14px;
+    font-family: var(--Raleway);
+    font-weight: bold;
+    color: var(--textColor_1);
+    transition: 0.3s;
+}
+nav .container ul li a:hover {
+    color: var(--secondaryColor);
+}
+/* ================Nav Section Style=============== */
+
+
+/* ================Hero Section Style=============== */
+.main .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main-section .red-bg {
-    height: 100vh;
-    width: 30%;
-    background: var(--primaryColor);
-    position: absolute;
-    border-radius: 20px 0 0 20px;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    -webkit-border-radius: 20px 0 0 20px;
-    -moz-border-radius: 20px 0 0 20px;
-    -ms-border-radius: 20px 0 0 20px;
-    -o-border-radius: 20px 0 0 20px;
+.main .hero img {
+    width: 650px;
 }
-.main-section .container .hero-left .video {
+.main .hero .hero-left p {
+    margin: 20px 0 30px 0;
+}
+.main .float-btn {
     display: flex;
     align-items: center;
-    margin-top: 0px;
     cursor: pointer;
+    margin-top: 100px;
+    padding-bottom: 40px;
 }
-.main-section .container .hero-left .video img {
-    width: 45px;
-    height: 45px;
+.main .float-btn img {
+    width: 50px;
 }
-.main-section .container .hero-left .video p {
-    counter-reset: var(--textColor_2);
+.main .float-btn h5 {
+    font-family: var(--Rubik);
     margin-left: 10px;
-    font-size: 14px;
+    color: var(--textColor_2);
+    font-weight: 500;
 }
-.main-section .container .hero-left .video p span {
+.main .float-btn h5 span {
     color: var(--textColor_1);
-    font-weight: bold;
+    font-weight: 600;
 }
-
-/* ================
-    hero section
-================= */
+/* ================Hero Section Style=============== */
 
 
-/* ================
-    Features section
-================= */
-
-
-section .container {
-    margin-top: 80px;
-    display: flex;
+/* ================Features Section Style=============== */
+.features .container {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-section .container img {
-    width: 500px;
+.features .container img {
+    width: 400px;
 }
-.container .app-img {
-    width: 60%;
+.features .container .features-right p {
+    margin: 20px 0 30px 0;
 }
-.container .right-part {
-    width: 50%;
+/* ================Features Section Style=============== */
+
+
+/* ================Support Section Style=============== */
+.support-container {
+    background: #FAFBFD;
+    margin-top: 60px;
 }
-.container .right-part a button {
-    border: none;
-    background: var(--primaryColor);
-    font-family: var(--Raleway);
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    width: 150px;
-    height: 40px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+.support-container .feature-container {
+    padding-top: 120px;
 }
-.container .right-part h1 {
-    font-size: 54px;
-    font-weight: 800;
+.support-container .feature-container .container {
+    position: relative;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.support-container .feature-container .container img {
+    position: absolute;
+    width: 900px;
+    height: 100%;
+    z-index: 2;
+}
+.support-container .feature-container .container .feature {
+    position: relative;
+    z-index: 3;
+    width: 760px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 20px;
+}
+.support-container .feature-container .container .feature .user {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.support-container .feature-container .container .feature .user h2 {
+    text-align: center;
     font-family: var(--Rubik);
-    color: var(--textColor_1);
-}
-.container .right-part h1 span {
+    font-size: 40px;
     color: var(--primaryColor);
+    line-height: 25px;
 }
-.container .right-part p{
-    font-size: 17px;
+.support-container .feature-container .container .feature .user h2 span {
+    font-size: 14px;
+    color: var(--textColor_1);
     font-family: var(--Rubik);
-    color: var(--textColor_2);
+}
+.support-container .support .container {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+}
+.support-container .support .container img {
+    width: 700px;
+}
+.support-container .support .container .support-left p {
     margin: 20px 0;
 }
+/* ================Sopport Section Style=============== */
 
-/* ================
-    Features section
-================= */
 
-.second-section {
-    background: #FAFBFD;
-    height: 100vh;
-    margin-top: 80px;
+/* ================Contact Section Style=============== */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
 }
-.second-section .service .container {
+.contact p {
+    margin-top: 20px;
+    text-align: center;
+}
+.contact .container-title {
+    flex-direction: column;
+}
+.contact .container {
     position: relative;
-    height: 335px;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
-.second-section .service .container .background {
-    position: absolute;
-    width: 75%;
-    height: 100%;
-    margin-top: 80px;
-}
-.second-section .service .container .background img {
+.contact .container img {
+    margin-top: 120px;
     width: 100%;
-}
-.second-section .service .container .box {
-    width: 80%;
-    height: 150px;
-    background: rgb(255, 255, 255);
-    margin-top: 150px;
+    z-index: -1;
     position: absolute;
+    width: 100%;
+    height: auto;
+}
+.contact .container .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 80px;
+    margin-top: 140px;
+}
+.contact .container .box .bx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 7px 25px rgba(0,0,0,0.05);
+    transition: 0.4s ease-in;
+    cursor: pointer;
+}
+.contact .container .box .bx:hover {
+    box-shadow: 7px 10px 25px rgba(0,0,0,0.2);
+    transform: translateY(-8px);
+}
+.contact .container .box .bx img {
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    height: auto;
+}
+.contact .container .box .bx h2 {
+    font-size: 18px;
+    font-family: var(--Rubik);
+    margin-top: 50px;
+}
+.contact .container .box .bx p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+/* ================Contact Section Style=============== */
+
+.apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apps img {
+    width: 200px;
+    margin-top: 160px;
+    margin-right: 30px;
+    margin-bottom: 60px;
+    cursor: pointer;
 }
